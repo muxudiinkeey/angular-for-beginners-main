@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+.title-heading {
+    color: teal;
+}
+.title-sub-heading {
+    color: orange;
+}
+
+
+.has-error{
+    border-color: #ff0000;    
+    border-style: solid;
+}
+
+.cursor {
+    cursor: pointer;
+}
