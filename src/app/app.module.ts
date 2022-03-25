@@ -1,19 +1,27 @@
+
+// Angular modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+
+//ngrx  module
+import { ModalModule } from 'ngx-bootstrap/modal';
+
+//local importa
+import { AppRoutingModule } from './app-routing.module';
+import { ToastrModule } from 'ngx-toastr';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { SharedModule } from './shared/shared.module';
+
+// components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
-import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
 import { CacheInterceptor } from './core/interceptors/cache.interceptor';
-import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './Home/home.component';
-import { ToastrModule } from 'ngx-toastr';
-import { NgxSpinnerModule } from 'ngx-spinner';
-import { ModalModule } from 'ngx-bootstrap/modal';
-import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
